@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/currencies" element={<Currencies />} />
-        <Route path="/price" element={<Price />} />
+        <Route path="/price/:symbol" element={<Price />} />
       </Routes>
     </div>
   );
@@ -20,7 +20,7 @@ function App() {
 
 export default App;
 
-
+// What the React-Router library does is allow us to define components that render based on the url in the address bar. We link to them with Link components which feel similar to the a tags we are used to. It allows to create a single page application in a way that feels like a multi-page application.
 
 // Creating Our Routes
 // Now we will will import the Route & Routes component into App, this will allow us define which of our components should render depending on the URL, we'll also import our pages for our routes.
